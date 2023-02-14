@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+}
+
+main {
+  background: darkgray;
+}
+
+header {
+  background: darkgray;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f5f5f5;
+}
+
+header nav ul li a.active {
+  color: #f5f5f5;
+}
+
+header nav ul li a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #f5f5f5;
+  margin-top: 5px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+main .hero {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: darkgray;
+}
+
+main .hero .hero-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .hero .hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+main .hero .hero-text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+main .hero .hero-text a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+main .hero .hero-text a:hover {
+  background: #333;
+  color: #fff;
+}
+
+main .hero .hero-image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .hero .hero-image img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+main .hero .hero-image img:hover {
+  transform: scale(1.1);
+}
+
+main .hero .hero-text button {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.information {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.information .card-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.information .card-container .card {
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 0 3rem;
+  padding: 10px;
+}
+
+.quote {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: darkblue;
+}
+
+.quote h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 5rem 5rem 0 5rem;
+}
+
+.quote p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0 5rem 5rem 5rem;
+}
+
+.call-to-action {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: darkgray;
+}
+
+.call-to-action .cta-container {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+}
+
+.call-to-action .cta-container h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.call-to-action .cta-container p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.call-to-action .cta-container button {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.call-to-action .cta-container button:hover {
+  background: #333;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: darkgrey;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
